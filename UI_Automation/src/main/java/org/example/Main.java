@@ -13,10 +13,9 @@ import java.io.File;
 
 public class Main {
     public static void main(String[] args) throws Throwable {
-        System.setProperty("webdriver.chrome.driver", "/Users/raghav.garg/Downloads/chromedriver");
         final String IMAGES_PATH = System.getProperty("user.dir") + "/UI_Automation/src/main/resources/Images/";
 
-        ChromeDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.warnerbros.com/movies/shazam-fury-gods");
 
